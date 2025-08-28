@@ -11,6 +11,11 @@ Pessoa pessoa2 = new Pessoa("Frankenstein", "Stein", 150);
 Curso cursoDeIngles = new Curso();
 cursoDeIngles.NomeCurso = "Inglês";
 cursoDeIngles.AdicionarAluno(pessoa1);
-cursoDeIngles.AdicionarAluno(pessoa2);
 cursoDeIngles.ListarAlunos();
-Console.WriteLine($"Total de alunos no curso: {cursoDeIngles.ContarAlunos()}");
+
+Curso cursoDeProgramacao = new Curso("Programação C#");
+cursoDeProgramacao.AdicionarAluno(pessoa2);
+cursoDeProgramacao.ListarAlunos();
+
+Console.WriteLine($"Total de alunos no curso de Inglês: {cursoDeIngles.ContarAlunos()}");
+Console.WriteLine($"Total de alunos no curso de Programação C#: {cursoDeProgramacao.ContarAlunos()}");
