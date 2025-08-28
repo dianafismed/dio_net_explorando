@@ -7,6 +7,17 @@ namespace dio_net_explorando.Models
 {
     public class Pessoa
     {
+        public Pessoa()
+        {
+        }
+
+        public Pessoa(String nome, String sobrenome, int idade)
+        {
+            NomeAluno = nome;
+            SobrenomeAluno = sobrenome;
+            IdadeAluno = idade;
+        }
+     
         // Campos privados
         private string _nome;
         private int _idade;
@@ -26,7 +37,7 @@ namespace dio_net_explorando.Models
         }
 
 
-        public int Idade
+        public int IdadeAluno
         {
             get => _idade;
             set
@@ -40,15 +51,15 @@ namespace dio_net_explorando.Models
         }
 
         // Propriedades sem validação
-        public string Sobrenome { get; set; } 
+        public string SobrenomeAluno { get; set; } 
 
-        public string NomeCompleto => $"{NomeAluno} {Sobrenome}".ToUpper(); // Propriedade somente leitura que retorna o nome completo em maiúsculas
+        public string NomeCompleto => $"{NomeAluno} {SobrenomeAluno}".ToUpper(); // Propriedade somente leitura que retorna o nome completo em maiúsculas
 
 
         // Método para apresentar a pessoa
         public void Apresentar()
         {
-            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {Idade} anos.");
+            Console.WriteLine($"Olá, meu nome é {NomeCompleto} e tenho {IdadeAluno} anos.");
         }
     }
 }

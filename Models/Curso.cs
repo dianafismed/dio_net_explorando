@@ -7,16 +7,22 @@ namespace dio_net_explorando.Models
 {
     public class Curso
     {
+        // Construtores
+        public Curso()
+        {
+            Alunos = new List<Pessoa>();
+        }
+
+        public Curso(String nomeCurso)
+        {
+            NomeCurso = nomeCurso;
+            Alunos = new List<Pessoa>();
+        }
+
+
         // Propriedades do curso
         public String NomeCurso { get; set; }
         public List<Pessoa> Alunos { get; set; }
-
-
-        // // Construtor para inicializar a lista de alunos
-        // public Curso()
-        // {
-        //     Alunos = new List<Pessoa>();
-        // }
 
 
         // Métodos
