@@ -39,10 +39,14 @@ namespace dio_net_explorando.Models
         public void ListarAlunos()
         {
             Console.WriteLine($"Alunos do curso {NomeCurso}:");
-            foreach (Pessoa aluno in Alunos)
+            for (int i = 0; i < Alunos.Count; i++)
             {
-                Console.WriteLine(aluno.NomeCompleto);
+                Console.WriteLine($"{i + 1}.\t{Alunos[i].NomeCompleto}");
             }
+            // foreach (Pessoa aluno in Alunos)
+            // {
+            //     Console.WriteLine(aluno.NomeCompleto);
+            // }
         }
 
         public int ContarAlunos()
