@@ -12,7 +12,7 @@ namespace dio_net_explorando.Models
         private int _idade;
 
         // Propriedades com validação
-        public string Nome
+        public string NomeAluno
         {
             get => _nome.ToUpper(); // Retorna o nome em maiúsculas
             set
@@ -42,7 +42,7 @@ namespace dio_net_explorando.Models
         // Propriedades sem validação
         public string Sobrenome { get; set; } 
 
-        public string NomeCompleto => $"{Nome} {Sobrenome}".ToUpper(); // Propriedade somente leitura que retorna o nome completo em maiúsculas
+        public string NomeCompleto => $"{NomeAluno} {Sobrenome}".ToUpper(); // Propriedade somente leitura que retorna o nome completo em maiúsculas
 
 
         // Método para apresentar a pessoa
