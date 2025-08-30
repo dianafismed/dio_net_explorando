@@ -29,9 +29,18 @@ using dio_net_explorando.Models;
 // // Formatação em moeda corrente do sistema
 // decimal valor = 1215.5M;
 // Console.WriteLine($"{valor:C}"); // C de currency (moeda)
+// Console.WriteLine(valor.ToString("C5")); 
+// // Formatação em moeda corrente de localidade específica
 // Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
 
 // // Alterando a localidade para mudar o formato da moeda
 // System.Globalization.CultureInfo.DefaultThreadCurrentCulture = new System.Globalization.CultureInfo("en-US");
 // Console.WriteLine($"{valor:C}"); // C de currency (moeda)
+
+// // Porcentagem
+// decimal porcentagem = .3421M;
+// Console.WriteLine(porcentagem.ToString("P")); // P de percentage (porcentagem)
+
+// int numero = 123456;
+// Console.WriteLine(numero.ToString("##-##-##"));
 
