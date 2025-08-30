@@ -7,11 +7,15 @@ pessoa1.IdadeAluno = 100;
 pessoa1.Apresentar();
 
 Pessoa pessoa2 = new Pessoa("Frankenstein", "Stein", 150);
+Pessoa pessoa3 = new Pessoa("Zé", "Ninguém", 20);
+Pessoa pessoa4 = new Pessoa("Maria", "Silva", 30);
 
 Curso cursoDeIngles = new Curso();
 cursoDeIngles.NomeCurso = "Inglês";
 cursoDeIngles.AdicionarAluno(pessoa1);
 cursoDeIngles.AdicionarAluno(pessoa2);
+cursoDeIngles.AdicionarAluno(pessoa3);
+cursoDeIngles.AdicionarAluno(pessoa4);
 cursoDeIngles.ListarAlunos();
 
 // Curso cursoDeProgramacao = new Curso("Programação C#");
