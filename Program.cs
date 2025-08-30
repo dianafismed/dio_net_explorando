@@ -44,3 +44,30 @@ using dio_net_explorando.Models;
 // int numero = 123456;
 // Console.WriteLine(numero.ToString("##-##-##"));
 
+// // Data e hora
+// DateTime data = DateTime.Now;
+// Console.WriteLine(data);
+// Console.WriteLine(data.ToString("dd/MM/yyyy"));
+// Console.WriteLine(data.ToString("yyyy-MM-dd"));
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm:ss"));
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm:ss.fff")); // fff = milissegundos
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm:ss.fff tt")); // tt = AM/PM
+// Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm:ss.fff zzz")); // zzz = fuso horário
+// Console.WriteLine(data.ToString("D")); // Formato longo da data
+// Console.WriteLine(data.ToString("d")); // Formato curto da data
+// Console.WriteLine(data.ToString("T")); // Formato longo da hora
+// Console.WriteLine(data.ToString("t")); // Formato curto da hora
+// Console.WriteLine(data.ToString("F")); // Formato longo da data e hora
+// Console.WriteLine(data.ToString("f")); // Formato curto da data e hora
+// Console.WriteLine(data.ToString("g")); // Formato geral curto da data e hora
+// Console.WriteLine(data.ToString("G")); // Formato geral longo da data e hora
+// Console.WriteLine(data.ToString("M")); // M de month (mês e dia)
+// Console.WriteLine(data.ToString("Y")); // Y de year (mês e ano)
+// Console.WriteLine(data.ToString("R")); // R de RFC1123 (padrão internacional)
+// Console.WriteLine(data.ToString("s")); // s de sortable (padrão internacional sem fuso)
+// Console.WriteLine(data.ToString("u")); // u de universal (padrão internacional sem fuso)
+// Console.WriteLine(data.ToString("U")); // U de universal (padrão internacional com fuso)
+
+
+
