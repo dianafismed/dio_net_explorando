@@ -69,5 +69,14 @@ using dio_net_explorando.Models;
 // Console.WriteLine(data.ToString("u")); // u de universal (padrão internacional sem fuso)
 // Console.WriteLine(data.ToString("U")); // U de universal (padrão internacional com fuso)
 
+// DateTime data = DateTime.Parse("28/07/2025 15:00");
+// Console.WriteLine(data);
 
-
+// string dataString = "2025-05-28 15:30";
+// string dataString2 = "2025/05/40";
+// DateTime.TryParseExact(dataString2,
+//                         "yyyy/MM/dd",
+//                         CultureInfo.InvariantCulture,  // InvariantCulture = cultura neutra
+//                         DateTimeStyles.None,
+//                         out DateTime data);  // retorna true ou false
+// Console.WriteLine(data);
