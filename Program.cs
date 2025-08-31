@@ -240,3 +240,19 @@ using dio_net_explorando.Models;
 // {
 //   Console.WriteLine("Não foi possível ler o arquivo.");
 // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
