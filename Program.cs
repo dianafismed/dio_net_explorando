@@ -125,4 +125,47 @@ using dio_net_explorando.Models;
 //   Console.WriteLine("Chegou no bloco finally.");
 // }
 
-new ExemploExcecao().Metodo1();
+// new ExemploExcecao().Metodo1();
+
+// // Filas
+// Queue<int> fila = new Queue<int>();
+// // Colocando elementos na fila
+// fila.Enqueue(1);
+// fila.Enqueue(2);
+// fila.Enqueue(3);
+
+// foreach (var item in fila)
+// {
+//   Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Primeiro elemento da fila: {fila.Peek()}");
+
+// // Retirando elementos da fila
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
+// foreach (var item in fila)
+// {
+//   Console.WriteLine(item);
+// }
+
+//Pilhas
+Stack<int> pilha = new Stack<int>();
+// Colocando elementos na pilha 
+pilha.Push(1);
+pilha.Push(2);
+pilha.Push(3);
+
+foreach (var item in pilha)
+{
+  Console.WriteLine(item);
+}
+
+Console.WriteLine($"Topo da pilha: {pilha.Peek()}");
+
+// Retirando elementos da pilha
+Console.WriteLine($"Removendo o elemento: {pilha.Pop()}");
+foreach (var item in pilha)
+{
+  Console.WriteLine(item);
+}
+
