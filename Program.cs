@@ -125,3 +125,4 @@ using dio_net_explorando.Models;
 //   Console.WriteLine("Chegou no bloco finally.");
 // }
 
+new ExemploExcecao().Metodo1();
