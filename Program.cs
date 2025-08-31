@@ -80,3 +80,48 @@ using dio_net_explorando.Models;
 //                         DateTimeStyles.None,
 //                         out DateTime data);  // retorna true ou false
 // Console.WriteLine(data);
+
+// Exceções
+// string[] linhas = File.ReadAllLines("Arquivos/texto.txt");
+// foreach (var linha in linhas)
+// {
+//   Console.WriteLine(linha);
+// }
+
+// try
+// {
+//   string[] linhas = File.ReadAllLines("Arquivos/texto1.txt");
+//   foreach (var linha in linhas)
+//   {
+//     Console.WriteLine(linha);
+//   }
+//   // using (StreamReader sr = new StreamReader("Arquivos/texto1.txt"))
+//   // {
+//   //   string? linha = string.Empty;
+//   //   while ((linha = sr.ReadLine()) != null)
+//   //   {
+//   //     Console.WriteLine(linha);
+//   //   }
+//   // }
+// }
+// catch (FileNotFoundException ex)
+// {
+//   Console.WriteLine($"Arquivo não encontrado: {ex.Message}");
+// }
+// catch (DirectoryNotFoundException ex)
+// {
+//   Console.WriteLine($"Diretório não encontrado: {ex.Message}");
+// }
+// catch (IOException ex)
+// {
+//   Console.WriteLine($"Erro de I/O: {ex.Message}");
+// }
+// catch (Exception ex)
+// {
+//   Console.WriteLine($"Erro genérico: {ex.Message}");
+// }
+// finally
+// {
+//   Console.WriteLine("Chegou no bloco finally.");
+// }
+
