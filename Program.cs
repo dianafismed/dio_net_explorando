@@ -148,24 +148,64 @@ using dio_net_explorando.Models;
 //   Console.WriteLine(item);
 // }
 
-//Pilhas
-Stack<int> pilha = new Stack<int>();
-// Colocando elementos na pilha 
-pilha.Push(1);
-pilha.Push(2);
-pilha.Push(3);
+// //Pilhas
+// Stack<int> pilha = new Stack<int>();
+// // Colocando elementos na pilha 
+// pilha.Push(1);
+// pilha.Push(2);
+// pilha.Push(3);
 
-foreach (var item in pilha)
-{
-  Console.WriteLine(item);
-}
+// foreach (var item in pilha)
+// {
+//   Console.WriteLine(item);
+// }
 
-Console.WriteLine($"Topo da pilha: {pilha.Peek()}");
+// Console.WriteLine($"Topo da pilha: {pilha.Peek()}");
 
-// Retirando elementos da pilha
-Console.WriteLine($"Removendo o elemento: {pilha.Pop()}");
-foreach (var item in pilha)
-{
-  Console.WriteLine(item);
-}
+// // Retirando elementos da pilha
+// Console.WriteLine($"Removendo o elemento: {pilha.Pop()}");
+// foreach (var item in pilha)
+// {
+//   Console.WriteLine(item);
+// }
 
+// // Dicionários
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+// estados.Add("SP", "São Paulo");
+// estados.Add("RJ", "Rio de Janeiro");
+// estados.Add("MG", "Minas Gerais");
+// foreach (var item in estados)
+// {
+//   Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+// Console.WriteLine("\n");
+
+// // Acessando um valor através da chave
+// Console.WriteLine($"Acessando um valor através da chave {estados["MG"]}");
+
+// // Removendo um item do dicionário
+// Console.WriteLine($"Removendo o estado do RJ {estados.Remove("RJ")}");
+// foreach (var item in estados)
+// {
+//   Console.WriteLine($"Chave: {item.Key}, Valor: {item.Value}");
+// }
+// Console.WriteLine("\n");
+
+// // Verificando se o dicionário contém uma chave
+// Console.WriteLine($"Verificando se o dicionário contém a chave SP {estados.ContainsKey("SP")}"); // true
+// Console.WriteLine($"Verificando se o dicionário contém a chave SC {estados.ContainsKey("SC")}"); // false
+// Console.WriteLine("\n");
+
+// // Verificando se o dicionário contém um valor
+// Console.WriteLine($"Verificando se o dicionário contém o valor MG {estados.ContainsValue("Minas Gerais")}"); // true
+// Console.WriteLine($"Verificando se o dicionário contém o valor SC {estados.ContainsValue("Santa Catarina")}"); // false
+// Console.WriteLine("\n");
+
+// // Obtendo o número de itens no dicionário
+// Console.WriteLine($"Total de estados no dicionário: {estados.Count}");
+// Console.WriteLine("\n");
+
+// // Limpando o dicionário
+// estados.Clear();
+// Console.WriteLine($"Total de estados no dicionário após o Clear: {estados.Count}");
+// Console.WriteLine("\n");
