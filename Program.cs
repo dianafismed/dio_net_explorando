@@ -209,3 +209,19 @@ using dio_net_explorando.Models;
 // estados.Clear();
 // Console.WriteLine($"Total de estados no dicionário após o Clear: {estados.Count}");
 // Console.WriteLine("\n");
+
+// Tuplas
+( string nome, int idade, decimal saldo) tupla = ("Vampiro", 100, 1234.56M);
+Console.WriteLine($"Nome: {tupla.nome}, Idade: {tupla.idade}, Saldo: {tupla.saldo}");
+
+(int, string, string) nomeCompleto = (1, "Vampiro", "Drácula");
+Console.WriteLine($"ID: {nomeCompleto.Item1}, Nome: {nomeCompleto.Item2}, Sobrenome: {nomeCompleto.Item3}");
+
+var nome = (2, "Frankenstein", "Stein");
+Console.WriteLine($"ID: {nome.Item1}, Nome: {nome.Item2}, Sobrenome: {nome.Item3}");
+
+ValueTuple<int, string, string> nome2 = (3, "Zé", "Ninguém");
+Console.WriteLine($"ID: {nome2.Item1}, Nome: {nome2.Item2}, Sobrenome: {nome2.Item3}");
+
+var outro = Tuple.Create(4, "Maria", "Silva");
+Console.WriteLine($"ID: {outro.Item1}, Nome: {outro.Item2}, Sobrenome: {outro.Item3}");
