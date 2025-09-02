@@ -259,7 +259,6 @@ using dio_net_explorando.Models;
 
 
 // if ternário
-
 int numero = 10;
 string resultado = numero % 2 == 0 ? "Par" : "Ímpar";
 Console.WriteLine($"O número {numero} é {resultado}");
