@@ -241,8 +241,21 @@ using dio_net_explorando.Models;
 //   Console.WriteLine("Não foi possível ler o arquivo.");
 // }
 
-
-
+LeituraArquivo arquivo = new LeituraArquivo();
+var leitura = arquivo.Ler("Arquivos/texto.txt");
+if (leitura.Sucesso)
+{
+  Console.WriteLine("Conteúdo do arquivo:");
+  foreach (var linha in leitura.Linhas)
+  {
+    Console.WriteLine(linha);
+  }
+  Console.WriteLine($"\nQuantidade de linhas do arquivo: {leitura.QuantidadeLinhas}\n");
+}
+else
+{
+  Console.WriteLine("Não foi possível ler o arquivo.");
+}
 
 
 
